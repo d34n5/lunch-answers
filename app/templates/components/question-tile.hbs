@@ -1,0 +1,10 @@
+<li>
+  <p {{action 'noteShow'}}>
+    {{question.author}} ASKS:  {{question.content}}
+  </p>
+  {{#if isNoteShowing }}
+    <p {{action 'noteHide'}}>{{question.note}}</p>
+  {{else}}
+    <!-- <button {{action 'noteShow'}}>Show Note</button> -->
+  {{/if}}
+</li>
