@@ -1,25 +1,15 @@
 import Ember from 'ember';
 
-// var questions = [{
-//   content: "Does anyone know of any Monday lunch specials?",
-//   author: "CartSeeker",
-//   note: "Loves Asian street food"
-// }, {
-//   content: "Biggest Burritos in Downtown?",
-//   author: "BurritoManiac",
-//   note: "I live for Taco Tuesday"
-// }, {
-//   content: "Best $5 sandwich",
-//   author: "SueEats",
-//   note: "Nothing says I've given up like a Subway sandwich"
-// }, {
-//   content: "Most authentic Thai cart?",
-//   author: "CartSeeker",
-//   note: "Loves Asian street food"
-// }];
-
 export default Ember.Route.extend({
   model() {
     return this.store.findAll('question');
   },
+
+  actions: {
+    saveQuestion3(params) {
+      var newQuestion = this.store.createRecord('question', params);
+      newQuestion.save();
+      this.transitionTo('index');
+    }
+  }
 });
