@@ -13,6 +13,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyAi1ye-K3TxRQuzkEVUmn5cos5-0k1ij9k",
+      authDomain: "lunch-answers.firebaseapp.com",
+      databaseURL: "https://lunch-answers.firebaseio.com",
+      storageBucket: "lunch-answers.appspot.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
