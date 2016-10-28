@@ -1,9 +1,9 @@
 <div class= "container">
   <header class= "jumbotron">
     <h1>Lunch Answers</h1>
-    {{#link-to 'index'}}Home{{/link-to}} ||
+    <h3 id="jumbo">{{#link-to 'index'}}Home{{/link-to}} ||
     {{#link-to 'about'}}About Us {{/link-to}} ||
-    {{#link-to 'contact'}}Contact Us{{/link-to}}
+    {{#link-to 'contact'}}Contact Us{{/link-to}}</h3>
   </header>
     {{outlet}}
   <br>
@@ -12,5 +12,6 @@
     <br>
     {{#link-to 'about'}}About Us{{/link-to}}
     <br>
+    <hr>
   </footer>
 </div>

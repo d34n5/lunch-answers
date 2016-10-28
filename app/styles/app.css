@@ -3,9 +3,13 @@ ul {
 }
 
 body {
-  background-color: ivory;
+  background-color: lavender;
+  font-size: 2em;
 }
 
 .jumbotron {
-  background-color: lavender;
+  background-image: url(http://1.bp.blogspot.com/-BJYmn-Ns77k/VTB1EG2_xbI/AAAAAAAACtg/cCC8pvgabUo/s1600/PDXPOD2.jpg);
+  background-size: cover;
+  color: white;
+  text-shadow: 3px 2px black;
 }
