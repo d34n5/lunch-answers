@@ -3,11 +3,22 @@
 <h4>We hope you find the lunch you seek at a sustainable price.</h4>
 <br>
 <ul>
-{{#each model as |question|}}
+  <h3> Lunch Questions.... </h3>
+{{#each model.questions as |question|}}
   {{question-tile question=question update="update"}}
 {{/each}}
 </ul>
 <br>
 {{new-question saveQuestion2="saveQuestion3"}}
 <br>
+<hr>
+<br>
+<h3>...And Lunch Answers </h3>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About Us{{/link-to}} <br> <br>
