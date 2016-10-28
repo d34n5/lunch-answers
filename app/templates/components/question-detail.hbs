@@ -3,8 +3,15 @@
   {{question.author}} ASKS:  {{question.content}}
 </p>
 {{#if isNoteShowing }}
-  <p {{action 'noteHide'}}>{{question.note}}</p>
+  <p {{action 'noteHide'}}> Additional Notes: {{question.note}}</p>
 {{else}}
   <!-- <button {{action 'noteShow'}}>Show Note</button> -->
 {{/if}}
 <br>
+<hr>
+<h2> Answers </h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>

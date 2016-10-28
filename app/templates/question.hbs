@@ -1,8 +1,10 @@
 
 <h4>More information about {{model.author}}'s Query: {{model.content}}</h4>
 
-<h2 {{action 'noteHide'}}> {{model.note}} </h2>
+<h4 {{action 'noteHide'}}> Additional Notes: {{model.note}} </h4>
 
 {{update-question question=model update="update"}}
 
-{{question-detail question=model}}
+<h3> {{question-detail question=model}} </h3>
+
+{{new-answer saveAnswer="saveAnswer" question=model}}

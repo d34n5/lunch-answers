@@ -3,7 +3,7 @@
     {{question.author}} ASKS:  {{question.content}} {{/link-to}}
 
   {{#if isNoteShowing }}
-    <p {{action 'noteHide'}}>{{question.note}}</p>
+    <p {{action 'noteHide'}}> Additional Notes: {{question.note}}</p>
   {{else}}
     <!-- <button {{action 'noteShow'}}>Show Note</button> -->
   {{/if}}

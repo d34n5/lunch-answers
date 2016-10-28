@@ -1,26 +1,15 @@
-<h1> Welcome to Lunch Answers </h1>
 
 <h4>We hope you find the lunch you seek at a sustainable price.</h4>
 <br>
 <ul>
-  <h3> Lunch Questions.... </h3>
+  <h2> Lunch Questions.... </h2>
+
 {{#each model.questions as |question|}}
+<hr>
   {{question-tile question=question update="update"}}
+<hr>
 {{/each}}
 </ul>
 <br>
 {{new-question saveQuestion2="saveQuestion3"}}
 <br>
-<hr>
-<br>
-<h3>...And Lunch Answers </h3>
-
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.content}} - by {{answer.author}}</li>
-  {{/each}}
-</ul>
-
-{{new-answer saveAnswer="saveAnswer"}}
-
-{{#link-to 'about'}}About Us{{/link-to}} <br> <br>
