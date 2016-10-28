@@ -1,6 +1,12 @@
 <h1> Welcome to Lunch Answers </h1>
 
-We hope you find the lunch you seek at a sustainable price.
-
-{{#link-to 'about'}}About Us{{/link-to}}
+<h4>We hope you find the lunch you seek at a sustainable price.</h4>
+<br>
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.author}} Asks {{question.content}} </li>
+  {{/each}}
+</ul>
+<br> <br>
+{{#link-to 'about'}}About Us{{/link-to}} <br> <br>
 {{#link-to 'contact'}}Contact us{{/link-to}}
