@@ -1,6 +1,6 @@
 <li>
   {{#link-to 'question' question.id}}
-    {{question.author}} ASKS:  {{question.content}} {{/link-to}}
+    {{question.author}} asks: <br> - {{question.content}} {{/link-to}}
 
   {{#if isNoteShowing }}
     <p {{action 'noteHide'}}> Additional Notes: {{question.note}}</p>
