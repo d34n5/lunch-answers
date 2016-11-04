@@ -6,7 +6,7 @@
 
 {{#each model.questions as |question|}}
 <hr>
-  {{question-tile question=question update="update"}}
+  {{question-tile question=question update="update"}} {{question-popularity question}}
 <hr>
 {{/each}}
 </ul>
