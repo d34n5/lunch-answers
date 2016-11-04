@@ -12,6 +12,9 @@ export default Ember.Component.extend({
        author: this.get('author'),
        question: this.get('question')
      };
+    //  this.set('content', '');
+    //  this.set('author', '');
+    //  this.set('question', '');
      this.set('addNewAnswer', false);
      this.sendAction('saveAnswer', params);
    }

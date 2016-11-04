@@ -1,6 +1,7 @@
 
 <p {{action 'noteShow'}}>
   {{question.author}} ASKS: <br> - {{question.content}}
+<hr>
 </p>
 {{#if isNoteShowing }}
   <p {{action 'noteHide'}}> Additional Notes: {{question.note}}</p>
