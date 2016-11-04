@@ -7,6 +7,10 @@ body {
   font-size: 2em;
 }
 
+span {
+  font-size: 2em;
+}
+
 .jumbotron {
   background-image: url(http://1.bp.blogspot.com/-BJYmn-Ns77k/VTB1EG2_xbI/AAAAAAAACtg/cCC8pvgabUo/s1600/PDXPOD2.jpg);
   background-size: cover;

@@ -4,6 +4,10 @@ export default Ember.Component.extend({
   isNoteShowing: false,
   // updateQuestionForm: false,
   actions: {
+    addToFavorites(item) {
+      this.get('favoritesList').add(item);
+      this.set('addedToFavorites', true)
+    },
     noteShow() {
       this.set('isNoteShowing', true);
     },

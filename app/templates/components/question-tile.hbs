@@ -1,6 +1,6 @@
 <li>
   {{#link-to 'question' question.id}}
-    {{question.author}} asks: <br> - {{question.content}} {{/link-to}}
+    {{question.author}} asks: {{question-popularity question}} <br> - {{question.content}} {{/link-to}}
   {{#if isNoteShowing }}
     <p {{action 'noteHide'}}> Additional Notes: {{question.note}}</p>
   {{else}}
@@ -8,4 +8,6 @@
   {{/if}}
   <!-- {{update-question question=question update="update"}}
   <br> -->
+  <br>
+  <button {{action 'addToFavorites' question}}> Add to Favorites </button>
 </li>
