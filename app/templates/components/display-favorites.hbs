@@ -1,3 +1,4 @@
 {{#each favoritesList.questions as |question|}}
-  {{question.author}} Asks: {{question.content}}
+  <li>{{#link-to 'question'}}{{question.author}} Asks: {{question.content}}{{/link-to}}
+  <hr></li>
 {{/each}}

@@ -11,10 +11,23 @@ span {
   font-size: 2em;
 }
 
+footer {
+  text-align: center;
+}
+
 .jumbotron {
   background-image: url(http://1.bp.blogspot.com/-BJYmn-Ns77k/VTB1EG2_xbI/AAAAAAAACtg/cCC8pvgabUo/s1600/PDXPOD2.jpg);
   background-size: cover;
   text-align: center;
   color: white;
   text-shadow: 3px 2px black;
+}
+
+#newQuestionButton {
+  margin-top: 15%;
+  font-size: 1.25em;
+}
+
+#tagline {
+  text-align: center;
 }
